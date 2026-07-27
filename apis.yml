@@ -1,7 +1,23 @@
 aid: hags
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hags.png
 name: HAGS
-description: 'HAGS is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'HAGS is a consumer-sector company listed in the portfolio of GV (Google Ventures)
+  and tracked in the API Evangelist network. Its website, hags.com, is live but served behind
+  Cloudflare, which challenge-blocks automated crawling (HTTP 403 on every path), so no public
+  developer program, OpenAPI definition, API reference, or documentation surface could be located
+  during enrichment. This profile is maintained as a lightweight company lead and will be expanded
+  if and when HAGS publishes a developer or API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/hags/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +27,24 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Startup
+- Venture-Backed
+- GV
 apis: []
+common:
+- type: Website
+  url: https://hags.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
